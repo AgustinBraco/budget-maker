@@ -1,0 +1,128 @@
+/* Switchs bod */
+.switch-body {
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(235, 235, 235, 0.863);
+}
+
+/* Swtich Cheap */
+.toggle-button-cheap {
+  position: relative;
+  height: 155px;
+  width: 300px;
+  background-color: #ddd;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.toggle-button-cheap.active {
+  background: #CACF85;
+}
+
+.toggle-button-cheap .icon {
+  position: absolute;
+  height: 120px;
+  top: 50%;
+  left: 20px;
+  cursor: pointer;
+  font-size: 70px;
+  color: #999;
+  transform: translateY(-50%);
+  width: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.5s;
+}
+
+.toggle-button-cheap.active .icon {
+  color: #CACF85;
+  left: calc(100% - 120px - 20px);
+}
+
+
+/* Swtich Fast */
+.toggle-button-fast {
+  position: relative;
+  height: 155px;
+  width: 300px;
+  background-color: #ddd;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.toggle-button-fast.active {
+  background: #8CBA80;
+}
+
+.toggle-button-fast .icon {
+  position: absolute;
+  height: 120px;
+  top: 50%;
+  left: 20px;
+  cursor: pointer;
+  font-size: 70px;
+  color: #999;
+  transform: translateY(-50%);
+  width: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.5s;
+}
+
+.toggle-button-fast.active .icon {
+  color: #8CBA80;
+  left: calc(100% - 120px - 20px);
+}
+
+
+/* Swtich Nice */
+.toggle-button-nice {
+  position: relative;
+  height: 155px;
+  width: 300px;
+  background-color: #ddd;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.toggle-button-nice.active {
+  background: #658E9C;
+}
+
+.toggle-button-nice .icon {
+  position: absolute;
+  height: 120px;
+  top: 50%;
+  left: 20px;
+  cursor: pointer;
+  font-size: 70px;
+  color: #999;
+  transform: translateY(-50%);
+  width: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.5s;
+}
+
+.toggle-button-nice.active .icon {
+  color: #658E9C;
+  left: calc(100% - 120px - 20px);
+}
