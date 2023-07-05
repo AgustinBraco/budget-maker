@@ -13,14 +13,13 @@ body {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  /* height: 100vh; */
   height: 100dvh;
   border: dashed 2px #000;
   background-color: rgba(235, 235, 235, 0.863);
   font-family: 'Bebas Neue', sans-serif;
 }
 
-/* All switchs */
+/* Switchs */
 .switch-body {
   display: flex;
   align-items: center;
@@ -92,7 +91,7 @@ body {
   color: #658E9C;
 }
 
-/* Query */
+/* Media query */
 @media (max-width: 700px) and (max-height: 900px) {
   .switch-body {
     height: 200px;
