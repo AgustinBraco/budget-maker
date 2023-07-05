@@ -1,128 +1,121 @@
-/* Switchs bod */
-.switch-body {
-  height: 300px;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(235, 235, 235, 0.863);
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Root */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Swtich Cheap */
-.toggle-button-cheap {
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: dashed 2px #000;
+  background-color: rgba(235, 235, 235, 0.863);
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* All switchs */
+.switch-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 90%;
+  gap: 60px;
+}
+
+.switch-text {
+  font-size: 45px;
+  letter-spacing: 4px;
+}
+
+.toggle-button {
   position: relative;
-  height: 155px;
-  width: 300px;
+  height: 80px;
+  width: 250px;
   background-color: #ddd;
   border-radius: 100px;
   cursor: pointer;
   transition: all ease 0.5s;
 }
 
-.toggle-button-cheap.active {
+.toggle-button .icon {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  font-size: 55px;
+  top: 50%;
+  left: 20px;
+  cursor: pointer;
+  color: #999;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  transition: all ease 0.5s;
+}
+
+.toggle-button.active .icon {
+  left: calc(100% - 100px - 20px);
+}
+
+/* Cheap */
+.cheap.active {
   background: #CACF85;
 }
-
-.toggle-button-cheap .icon {
-  position: absolute;
-  height: 120px;
-  top: 50%;
-  left: 20px;
-  cursor: pointer;
-  font-size: 70px;
-  color: #999;
-  transform: translateY(-50%);
-  width: 120px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-  transition: all ease 0.5s;
-}
-
-.toggle-button-cheap.active .icon {
+.cheap.active .icon {
   color: #CACF85;
-  left: calc(100% - 120px - 20px);
 }
 
-
-/* Swtich Fast */
-.toggle-button-fast {
-  position: relative;
-  height: 155px;
-  width: 300px;
-  background-color: #ddd;
-  border-radius: 100px;
-  cursor: pointer;
-  transition: all ease 0.5s;
-}
-
-.toggle-button-fast.active {
+/* Fast */
+.fast.active {
   background: #8CBA80;
 }
-
-.toggle-button-fast .icon {
-  position: absolute;
-  height: 120px;
-  top: 50%;
-  left: 20px;
-  cursor: pointer;
-  font-size: 70px;
-  color: #999;
-  transform: translateY(-50%);
-  width: 120px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-  transition: all ease 0.5s;
-}
-
-.toggle-button-fast.active .icon {
+.fast.active .icon {
   color: #8CBA80;
-  left: calc(100% - 120px - 20px);
 }
 
-
-/* Swtich Nice */
-.toggle-button-nice {
-  position: relative;
-  height: 155px;
-  width: 300px;
-  background-color: #ddd;
-  border-radius: 100px;
-  cursor: pointer;
-  transition: all ease 0.5s;
-}
-
-.toggle-button-nice.active {
+/* Nice */
+.nice.active {
   background: #658E9C;
 }
-
-.toggle-button-nice .icon {
-  position: absolute;
-  height: 120px;
-  top: 50%;
-  left: 20px;
-  cursor: pointer;
-  font-size: 70px;
-  color: #999;
-  transform: translateY(-50%);
-  width: 120px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-  transition: all ease 0.5s;
+.nice.active .icon {
+  color: #658E9C;
 }
 
-.toggle-button-nice.active .icon {
-  color: #658E9C;
-  left: calc(100% - 120px - 20px);
+/* Query */
+@media (max-width: 700px) and (max-height: 900px) {
+  .switch-body {
+    height: 200px;
+    gap: 30px;
+  }
+
+  .switch-text {
+    font-size: 35px;
+    letter-spacing: 2px;
+  }
+
+  .toggle-button {
+    height: 60px;
+    width: 165px;
+  }
+
+  .toggle-button .icon {
+    height: 70px;
+    width: 70px;
+    font-size: 40px;
+    left: 10px;
+  }
+
+  .toggle-button.active .icon {
+    left: calc(100% - 70px - 10px);
+  }
 }

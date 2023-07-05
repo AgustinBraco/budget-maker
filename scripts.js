@@ -1,7 +1,7 @@
 // Getting switchs:
-const cheapButton = document.querySelector(".toggle-button-cheap");
-const fastButton = document.querySelector(".toggle-button-fast");
-const niceButton = document.querySelector(".toggle-button-nice");
+const cheap = document.querySelector(".cheap");
+const fast = document.querySelector(".fast");
+const nice = document.querySelector(".nice");
 
 // Class management:
 function switchState(switchName) {
@@ -20,23 +20,23 @@ function removeActive(switchName) {
 };
 
 // Switchs logic:
-cheapButton.addEventListener("click", () => {
-  toggleActive(cheapButton);
-  if(switchState(fastButton) && switchState(niceButton)) {
-    removeActive(niceButton);
+cheap.addEventListener("click", () => {
+  toggleActive(cheap);
+  if(switchState(fast) && switchState(nice)) {
+    removeActive(nice);
   };
 });
 
-fastButton.addEventListener("click", () => {
-  toggleActive(fastButton);
-  if(switchState(cheapButton) && switchState(niceButton)) {
-    removeActive(cheapButton);
+fast.addEventListener("click", () => {
+  toggleActive(fast);
+  if(switchState(cheap) && switchState(nice)) {
+    removeActive(cheap);
   };
 });
 
-niceButton.addEventListener("click", () => {
-  toggleActive(niceButton);
-  if(switchState(cheapButton) && switchState(fastButton)) {
-    removeActive(fastButton);
+nice.addEventListener("click", () => {
+  toggleActive(nice);
+  if(switchState(cheap) && switchState(fast)) {
+    removeActive(fast);
   };
 });
